@@ -14,13 +14,6 @@ manifest:
       path: modules/lib/serial-flash
       groups:
         - lib
-    - name: littlefs
-      url: https://github.com/littlefs-project/littlefs
-      submodules: true
-      revision: v2.4.0
-      path: modules/lib/littlefs
-      groups:
-        - lib
     - name: zephyr_example_filesystem_littlefs
       url: https://github.com/cy-srds/zephyr-example-filesystem-littlefs
       submodules: true
