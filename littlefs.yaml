@@ -1,0 +1,27 @@
+manifest:
+  projects:
+    - name: infineon_mtb_littlefs
+      url: https://github.com/cypresssemiconductorco/mtb-littlefs
+      submodules: true
+      revision: release-v2.0.0
+      path: modules/lib/mtb-littlefs
+      groups:
+        - lib
+    - name: infineon_serial_flash
+      url: https://github.com/cypresssemiconductorco/serial-flash
+      submodules: true
+      revision: release-v1.3.0
+      path: modules/lib/serial-flash
+      groups:
+        - lib
+    - name: littlefs
+      url: https://github.com/littlefs-project/littlefs
+      submodules: true
+      revision: v2.4.0
+      path: modules/lib/littlefs
+      groups:
+        - lib
+    - name: zephyr_example_filesystem_littlefs
+      url: https://github.com/cy-srds/zephyr-example-filesystem-littlefs
+      submodules: true
+      revision: littlefs-port-v1
