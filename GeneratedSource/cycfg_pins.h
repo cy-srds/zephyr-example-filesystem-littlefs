@@ -41,6 +41,11 @@
 extern "C" {
 #endif
 
+#define ioss_0_port_6_pin_4_HSIOM P6_4_CPUSS_SWJ_SWO_TDO
+#define ioss_0_port_6_pin_6_HSIOM P6_6_CPUSS_SWJ_SWDIO_TMS
+#define ioss_0_port_6_pin_7_HSIOM P6_7_CPUSS_SWJ_SWCLK_TCLK
+
+
 #define CYBSP_WCO_IN_ENABLED 1U
 #define CYBSP_WCO_IN_PORT GPIO_PRT0
 #define CYBSP_WCO_IN_PORT_NUM 0U
