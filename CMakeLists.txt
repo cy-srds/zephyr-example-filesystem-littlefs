@@ -3,7 +3,7 @@
 cmake_minimum_required(VERSION 3.20.0)
 
 find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
-project(capsense_buttons_slider)
+project(filesystem_littlefs)
 
 set(PDL_DRIVER_DIR ${ZEPHYR_HAL_INFINEON_MODULE_DIR}/mtb-pdl-cat1/drivers/source)
 set(HAL_SOURCE_DIR ${ZEPHYR_HAL_INFINEON_MODULE_DIR}/mtb-hal-cat1/COMPONENT_PSOC6HAL/source)
@@ -13,8 +13,8 @@ set(MTB_LITTLEFS_LIB_DIR ${ZEPHYR_HAL_INFINEON_MODULE_DIR}/../../lib/mtb-littlef
 set(SERIAL_FLASH_LIB_DIR ${ZEPHYR_HAL_INFINEON_MODULE_DIR}/../../lib/serial-flash)
 set(ABSTRACTION_RTOS_ZEPHYR_DIR ${ZEPHYR_HAL_INFINEON_MODULE_DIR}/../../../zephyr/modules/hal_infineon/abstraction-rtos)
 
-zephyr_library_sources(${PDL_DRIVER_DIR}/cy_smif.c ${PDL_DRIVER_DIR}/cy_smif_memslot.c ${PDL_DRIVER_DIR}/cy_dma.c)
-zephyr_library_sources(${HAL_SOURCE_DIR}/cyhal_qspi.c)
+zephyr_library_sources(${PDL_DRIVER_DIR}/cy_smif.c ${PDL_DRIVER_DIR}/cy_smif_memslot.c ${PDL_DRIVER_DIR}/cy_dma.c ${PDL_DRIVER_DIR}/cy_sd_host.c)
+zephyr_library_sources(${HAL_SOURCE_DIR}/cyhal_qspi.c ${HAL_SOURCE_DIR}/cyhal_sdhc.c)
 zephyr_include_directories(${LITTLEFS_LIB_DIR})
 zephyr_include_directories(${LITTLEFS_BD_LIB_DIR})
 zephyr_include_directories(${MTB_LITTLEFS_LIB_DIR}/include)

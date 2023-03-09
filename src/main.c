@@ -54,7 +54,7 @@
 /* When set to 1, SD card will be used instead of the NOR flash */
 #define STORAGE_DEVICE_SD_CARD              (0)
 
-#define LITTLEFS_TASK_STACK_SIZE            (1024U)
+#define LITTLEFS_TASK_STACK_SIZE            (2048U)
 #define LITTLEFS_TASK_PRIORITY              (6U)
 #define USER_BUTTON_INTERRUPT_PRIORITY      (7U)
 
