@@ -221,8 +221,8 @@ static void littlefs_task(void *dummy1, void *dummy2, void *dummy3)
 
     /* Remove warning for unused parameter */
     ARG_UNUSED(dummy1);
-	ARG_UNUSED(dummy2);
-	ARG_UNUSED(dummy3);
+    ARG_UNUSED(dummy2);
+    ARG_UNUSED(dummy3);
 
     /* Step 1: Get the default configuration for the block device.
      * Step 2: Initialize the lfs_config structure to zero (not required if it
