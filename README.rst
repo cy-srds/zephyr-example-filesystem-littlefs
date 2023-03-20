@@ -38,9 +38,7 @@ In this example we will build it for the cy8cproto_062_4343w board:
 
 2. Open a terminal program and select the KitProg3 COM port. Set the serial port parameters to 8N1 and 115200 baud.
 
-3. After programming, the application starts automatically. Confirm that  "Littlefs File System on SD Card and QSPI NOR Flash" is displayed on the UART terminal. 
-
-When the application is run for the first time, mounting the filesystem might result in error in which case the memory is formatted and then the filesystem is mounted.
+3. After programming, the application starts automatically. Confirm that  "Littlefs File System on SD Card and QSPI NOR Flash" is displayed on the UART terminal. When the application is run for the first time, mounting the filesystem might result in error in which case the memory is formatted and then the filesystem is mounted.
 
 4. Now, press the reset button on the kit and observe that the boot_count is incremented.
 
