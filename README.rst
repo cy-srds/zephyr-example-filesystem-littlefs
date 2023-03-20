@@ -1,12 +1,12 @@
 .. _littlefs-filesystem:
 
-`PSoC&trade;` 6 MCU: littlefs Filesystem
+Littlefs Filesystem
 ######
 
 Overview
 ********
 
-This code example uses the `Arm&reg; Cortex&reg;-M4 (CM4) CPU of PSoC&trade; 6 MCU to execute a littlefs filesystem task`.
+This code example uses the `Arm® Cortex®-M4 (CM4) CPU of PSoC™ 6 MCU to execute a littlefs filesystem task`.
 
 At device reset, the default Cortex-M0+ (CM0+) application enables the CM4 CPU and configures the CM0+ CPU to go to sleep.
 The CM4 CPU mounts the filesystem on the storage device, reads a 32-bit value from a file, increments the value, writes the
@@ -15,17 +15,13 @@ reset. The storage device can be either an SD card or a QSPI NOR flash. This pro
 <https://github.com/Infineon/mtb-littlefs>` that implements the littlefs-compatible block device drivers for different storage
 devices such as SD card and NOR flash.
 
-
-example features a 5-segment CAPSENSE&trade; slider and two CAPSENSE&trade; buttons.
-Button 0 turns the LED ON, button 1 turns the LED OFF, and the slider controls the brightness of the LED.
-The code example also demonstrates monitoring CAPSENSE&trade; data using the CAPSENSE&trade; tuner GUI tool.
-This project uses the `CAPSENSE&trade; Middleware Library <https://github.com/Infineon/capsense>`.
-
 Requirements
 ************
 
 The board hardware must have storage device SD card or a QSPI NOR flash.
-This sample is intended to be used with `CY8CPROTO-062-4343W PSoC&trade; 6 Wi-Fi Bluetooth® prototyping kit <https://www.cypress.com/CY8CPROTO-062-4343W>`.
+This sample is intended to be used with `CY8CPROTO-062-4343W PSoC™ 6 Wi-Fi Bluetooth® prototyping kit <https://www.infineon.com/CY8CPROTO-062-4343W>`.
+
+Refer to the Zephyr `Getting Started Guide <https://docs.zephyrproject.org/latest/develop/getting_started/index.html>`_ for more details on how to setup and run applications in Zephyr.
 
 Building and Running
 ********************
