@@ -138,7 +138,7 @@ static void print_block_device_parameters(struct lfs_config *lfs_cfg)
 static void user_button_interrupt_handler(void *handler_arg, cyhal_gpio_event_t event)
 {
     /* Remove warning for unused parameter */
-	ARG_UNUSED(handler_arg);
+    ARG_UNUSED(handler_arg);
     ARG_UNUSED(event);
 
     /* notify thread that data is available */
