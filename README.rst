@@ -12,14 +12,14 @@ At device reset, the default Cortex-M0+ (CM0+) application enables the CM4 CPU a
 The CM4 CPU mounts the filesystem on the storage device, reads a 32-bit value from a file, increments the value, writes the
 value back to the file, and finally prints the value to the UART terminal. You will see the value incrementing after every 
 reset. The storage device can be either an SD card or a QSPI NOR flash. This project uses the `mtb-littlefs Middleware library 
-<https://github.com/Infineon/mtb-littlefs>` that implements the littlefs-compatible block device drivers for different storage
+<https://github.com/Infineon/mtb-littlefs>`_. that implements the littlefs-compatible block device drivers for different storage
 devices such as SD card and NOR flash.
 
 Requirements
 ************
 
 The board hardware must have storage device SD card or a QSPI NOR flash.
-This sample is intended to be used with `CY8CPROTO-062-4343W PSoC™ 6 Wi-Fi Bluetooth® prototyping kit <https://www.infineon.com/CY8CPROTO-062-4343W>`.
+This sample is intended to be used with `CY8CPROTO-062-4343W PSoC™ 6 Wi-Fi Bluetooth® prototyping kit <https://www.infineon.com/CY8CPROTO-062-4343W>`_.
 
 Refer to the Zephyr `Getting Started Guide <https://docs.zephyrproject.org/latest/develop/getting_started/index.html>`_ for more details on how to setup and run applications in Zephyr.
 
