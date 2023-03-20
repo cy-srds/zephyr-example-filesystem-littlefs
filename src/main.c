@@ -39,6 +39,7 @@
 * of such system or application assumes all risk of such use and in doing
 * so agrees to indemnify Cypress against all liability.
 *******************************************************************************/
+
 #include "cyhal.h"
 #include "cycfg_pins.h"
 #include "lfs.h"
@@ -76,6 +77,7 @@ static void littlefs_task(void *dummy1, void *dummy2, void *dummy3);
 K_SEM_DEFINE(btn_isr_sema, 0, 1);
 K_THREAD_DEFINE(littlefs_task_id, LITTLEFS_TASK_STACK_SIZE, littlefs_task,
             NULL, NULL, NULL, LITTLEFS_TASK_PRIORITY, 0, -1);
+
 cyhal_gpio_callback_data_t gpio_btn_callback_data;
 
 
