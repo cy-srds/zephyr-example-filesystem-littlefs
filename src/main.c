@@ -39,7 +39,6 @@
 * of such system or application assumes all risk of such use and in doing
 * so agrees to indemnify Cypress against all liability.
 *******************************************************************************/
-
 #include "cyhal.h"
 #include "cycfg_pins.h"
 #include "lfs.h"
@@ -74,10 +73,10 @@ static void littlefs_task(void *dummy1, void *dummy2, void *dummy3);
 /*******************************************************************************
  * Global Variables
  ******************************************************************************/
-cyhal_gpio_callback_data_t gpio_btn_callback_data;
 K_SEM_DEFINE(btn_isr_sema, 0, 1);
 K_THREAD_DEFINE(littlefs_task_id, LITTLEFS_TASK_STACK_SIZE, littlefs_task,
             NULL, NULL, NULL, LITTLEFS_TASK_PRIORITY, 0, -1);
+cyhal_gpio_callback_data_t gpio_btn_callback_data;
 
 
 /*******************************************************************************
@@ -138,7 +137,8 @@ static void print_block_device_parameters(struct lfs_config *lfs_cfg)
 *******************************************************************************/
 static void user_button_interrupt_handler(void *handler_arg, cyhal_gpio_event_t event)
 {
-    ARG_UNUSED(handler_arg);
+    /* Remove warning for unused parameter */
+	ARG_UNUSED(handler_arg);
     ARG_UNUSED(event);
 
     /* notify thread that data is available */

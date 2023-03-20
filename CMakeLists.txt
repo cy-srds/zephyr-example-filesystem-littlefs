@@ -3,7 +3,7 @@
 cmake_minimum_required(VERSION 3.20.0)
 
 find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
-project(filesystem_littlefs)
+project(littlefs_filesystem)
 
 set(PDL_DRIVER_DIR ${ZEPHYR_HAL_INFINEON_MODULE_DIR}/mtb-pdl-cat1/drivers/source)
 set(HAL_SOURCE_DIR ${ZEPHYR_HAL_INFINEON_MODULE_DIR}/mtb-hal-cat1/COMPONENT_PSOC6HAL/source)
