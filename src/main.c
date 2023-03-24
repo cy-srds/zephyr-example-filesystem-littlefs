@@ -45,6 +45,7 @@
 #include "lfs.h"
 #include "lfs_sd_bd.h"
 #include "lfs_spi_flash_bd.h"
+#include <zephyr/kernel.h>
 #include <zephyr/device.h>
 
 

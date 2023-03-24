@@ -17,4 +17,4 @@ manifest:
     - name: zephyr_example_filesystem_littlefs
       url: https://github.com/cy-srds/zephyr-example-filesystem-littlefs
       submodules: true
-      revision: littlefs-port-v1
+      revision: develop
